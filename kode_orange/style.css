@@ -1,0 +1,536 @@
+/*
+Theme Name: kode_orange
+Author: Karlina Ray Beringer
+Author URI: http://www.karlina-bytes.com
+Description: This is a theme developed especially for the Karlina Bytes website.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kode_orange
+Tags: orange, gray, dark, white
+
+The style.css file was updated on 16 May 2015.
+It utilizes Bootstrap version 3.3.4.
+
+Feel free to use this theme to learn how to make your own WP theme.
+If you have any questions or comments, please contact me at:
+karlina.beringer@gmail.com.
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+  1.0 Page Components
+      1.1 Header 
+      1.2 Body
+      1.3 Sidebar
+        1.3.1 Jetpack Subscribe Widget
+      1.4 Footer
+  2.0 Typography
+      2.1 Fonts
+      2.2 Links
+  3.0 Media
+      3.1 Navigation Tabs
+      3.2 Forms
+          3.2.1 Archives Dropdown
+          3.2.2 Search Box
+          3.2.1 Comments Form
+      3.3 Responsive Videos
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> 1.0 Page Components
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> 1.1 Header 
+Navigation Bar at the top of the page.
+--------------------------------------------------------------*/
+.navbar-inverse {
+  background-color: #2A2C34;
+  border-bottom: 2px solid #FFA500;
+}
+
+/** Customize the style of the brand name */
+.navbar-inverse .navbar-brand {
+  color: #FFA500;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/** Customize the style of the page links */
+.navbar-inverse .nav > li > a {
+  color: #FFA500;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  line-height: 180%;
+}
+
+.navbar-inverse .nav > li > a:hover, 
+.navbar-inverse .brand:hover {
+  color: #E2E2E2;
+}
+
+/** Customize the three-bar icon displayed in mobile */
+.navbar-inverse .navbar-toggle {
+  background-color: #2A2C34;
+  border: 2px solid #FFA500;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #FFA500;
+}
+
+/** Customize the header drop-down menu in mobile mode */
+@media screen and (max-width: 768px) {
+  .navbar-inverse .navbar-collapse {
+    box-shadow: none;
+    border-top: 2px solid #FFA500;
+  }
+}
+
+/*-------------------------------------------------------------
+>>> 1.2 Body 
+The light-gray section where pages and posts are displayed.
+--------------------------------------------------------------*/
+html,
+body {
+  background: #606375;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/** Make the main section take up adequate space on the page in desktop mode */
+@media screen and (min-width: 769px) {
+  .content-area {
+    min-height: 120vh;
+  }
+}
+
+/** This is where the primary content is displayed */
+.content-area {
+  background: #E2E2E2;
+  padding: 3.5em 1em 1em 1em;
+  max-width: 1024px;
+}
+
+/** An orange horizontal line to divide sections */
+hr {
+  background-color: #FFA500;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFA500;
+}
+
+/*-------------------------------------------------------------
+>>> 1.3 Sidebar 
+The dark gray area to the right where widgets are displayed.
+--------------------------------------------------------------*/
+.sidebar {
+  background: #606375;
+  padding: 3.5em 1em 1em 1em;
+  min-height: 90vh;
+}
+
+.sideBarText {
+  color: #FFA500;
+}
+
+.socialMediaIcons {
+  max-width: 80px;
+}
+
+/*--------------------------------------------------------------
+>>> 1.3.1 Jetpack Subscribe Widget
+This is a drag-and-drop feature from the Jetpack plugin.
+--------------------------------------------------------------*/
+.jetpack_subscription_widget h1 {
+  color: #FFA500;
+  font-size: 24pt;
+}
+
+.jetpack_subscription_widget p {
+  color: #FFA500;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11pt;
+}
+
+.jetpack_subscription_widget input[type="email"] {
+  background: #E2E2E2;
+  max-width: 250px;
+  height: 2em;
+  color: #2A2C34;
+}
+
+.jetpack_subscription_widget ::-webkit-input-placeholder { /* WebKit browsers */
+  color: #606375;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+}
+
+.jetpack_subscription_widget :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #606375;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+}
+
+.jetpack_subscription_widget ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #606375;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+}
+
+.jetpack_subscription_widget :-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #606375;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+}
+
+/** Customize the subscribe button */
+.jetpack_subscription_widget input[type="submit"] {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11pt;
+  padding: 0.75em;
+  box-shadow: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.jetpack_subscription_widget input[type="submit"]:hover {
+  background: #2A2C34;
+  color: #FFA500;
+}
+
+/*--------------------------------------------------------------
+>>> 1.4 Footer
+The dark bar at the bottom of the page for copyright info.
+--------------------------------------------------------------*/
+.site-footer {
+  background: #2A2C34;
+  color: #FFA500;
+  border-top: 2px solid #FFA500;
+  font-size: 12pt;
+  font-family: Verdana, Geneva, sans-serif;
+  padding: 1em;
+  vertical-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .site-footer {font-size: 9pt;}
+}
+
+/*--------------------------------------------------------------
+>>> 2.0 Typography
+Styles for header font, paragraphs, lists, etc.
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> 2.1 Fonts
+Stylizing the way words appear.
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  color: #2A2C34;
+}
+
+h4 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  color: #606375;
+}
+
+.dateText {
+  color: #606375;
+  font-size: 100%;
+}
+
+/** Media queries specify styles for certain screen widths */
+@media screen and (max-width: 768px) {
+  h2 {font-size: 175%}
+  h3 {font-size: 125%;}
+  p, ul, ol {font-size: 100%;}
+  .categoryLink {font-size: 75%}
+  .jetpack_subscription_widget h1 {font-size: 175%}
+}
+
+p, ul, ol {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  color: #2A2C34;
+  font-size: 12pt;
+}
+
+.categoryLink {font-size: 100%}
+
+.nextPreviousLink {
+  padding: 1em;
+  vertical-align: center;
+}
+
+.grayRoundBullets {
+  color: #606375;
+}
+
+/** An alternative to rounded bullets preprending list items */
+.graySquareBullets {
+  color: #606375;
+  list-style: square;
+}
+
+/** A list style I made specifically for category links in the sidebar */
+.categoryListStyle,
+.categoryListStyle > li > a {
+  color: #FFA500;
+  font-size: 11pt;
+}
+
+.categoryListStyle > li > a:hover {
+  color: #E2E2E2;
+  font-size: 11pt;
+}
+
+.boldBlueText {
+  color: #3C78D8;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/** Text resembling computer program code snippets */
+code {
+  color: #2A2C34;
+  background: none;
+  font-family: Consolas, Courier New, monospace;
+  font-size: 11pt;
+}
+
+/*--------------------------------------------------------------
+>>> 2.2 Links
+Styles for the hyperlinks.
+--------------------------------------------------------------*/
+a, 
+a:visited,
+a:focus,
+a:active {
+  color: #3C78D8;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover {
+  color: #FFA500;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/*--------------------------------------------------------------
+>>> 3.0 Media
+Images, iFrames (for embedding videos, etc.), and more
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> 3.1 Navigation Tabs
+Bootstrap tabs for hiding/showing page sections.
+--------------------------------------------------------------*/
+.nav-pills > li > a {
+  background: #2A2C34;
+  color: #FFA500;
+  font-weight: normal;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  vertical-align: middle;
+}
+
+.nav-pills > li > a:hover, 
+.nav-pills > li > a:focus {
+  background: #2A2C34;
+  color: #E2E2E2;
+  font-weight: normal;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: #FFA500;
+  color: #2A2C34;
+  font-weight: normal;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*--------------------------------------------------------------
+>>> 3.2 Forms
+Places in which readers can input data (e.g. search bar)
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #FFA500;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  background-color: #606375;
+  padding: 0.375em;
+  width: 200px;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  color: #FFA500;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #FFA500; 
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #FFA500; 
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal; 
+}
+
+:-ms-input-placeholder {  
+  color: #FFA500;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;  
+}
+
+/*--------------------------------------------------------------
+>>> 3.2.1 Archives Dropdown
+Allows readers to select blog posts by time period.
+--------------------------------------------------------------*/
+
+/** Gets rid of default browser styling for drop-down menus */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.dropDownStyle {
+  background: #606375;
+  color: #FFA500;
+  border: 3px solid #FFA500;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+>>> 3.2.3 Search Box
+Allows readers to look up content via search terms.
+--------------------------------------------------------------*/
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #2A2C34;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  background-color: #FFA500;
+  border: none;
+}
+
+input[type="submit"], button[type="submit"], .input-group-addon {
+  color: #2A2C34;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  background-color: #FFA500;
+  border: none;
+}
+
+.glyphicon-search {
+  color: #2A2C34;
+}
+
+.navSearch {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  max-width: 350px;
+}
+
+/*--------------------------------------------------------------
+>>> 3.2.3 Comments Form
+Allows readers to leave feedback on blog posts.
+--------------------------------------------------------------*/
+#submit {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11pt;
+  padding: 0.75em;
+  box-shadow: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+} 
+
+#submit:hover {
+  background: #2A2C34;
+  color: #FFA500;
+}
+
+#respond input[type=text], input[type=email], input[type=url], textarea {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 70%;
+}
+
+#respond label {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+  color: #2A2C34;
+  display: block;
+}
+
+/*--------------------------------------------------------------
+>>> 3.3 Responsive Video
+For responsive images, use the Bootstrap class "img-responsive"
+--------------------------------------------------------------*/
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

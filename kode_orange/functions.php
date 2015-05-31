@@ -1,12 +1,12 @@
 <?php
 /**
  * functions.php 
- * Updated by Karlina Beringer on 16 May 2015.
+ * Updated by Karlina Beringer on 30 May 2015.
  *
  * kode_orange functions and definitions
  *
  * @package kode_orange
- * The kode_orange theme is customized specifially for the Karlina Bytes website.
+ * The kode_orange theme is customized specifically for the Karlina Bytes website.
  */
 
 /**
@@ -104,6 +104,12 @@ function wpbootstrap_scripts_with_jquery() {
 	wp_enqueue_script( 'custom-script' );
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
+
+/* Add JQuery to the theme */
+function wp_add_jquery() {
+  wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/jquery.min.js');
+}
+add_action( 'wp_enqueue_scripts', 'wp_add_jquery' );
 
 /* Customize the title displayed on the home page tab. */
 add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );

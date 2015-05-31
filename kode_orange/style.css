@@ -3,19 +3,18 @@ Theme Name: kode_orange
 Author: Karlina Ray Beringer
 Author URI: http://www.karlina-bytes.com
 Description: This is a theme developed especially for the Karlina Bytes website.
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kode_orange
 Tags: orange, gray, dark, white
 
-The style.css file was updated on 16 May 2015.
+The style.css file was updated on 30 May 2015.
 It utilizes Bootstrap version 3.3.4.
 
 Feel free to use this theme to learn how to make your own WP theme.
 If you have any questions or comments, please contact me at:
 karlina.beringer@gmail.com.
-
 */
 
 /*--------------------------------------------------------------
@@ -45,43 +44,56 @@ karlina.beringer@gmail.com.
 
 /*--------------------------------------------------------------
 >>> 1.1 Header 
-Navigation Bar at the top of the page.
+Dark navigation Bar at the top of the page.
 --------------------------------------------------------------*/
 .navbar-inverse {
   background-color: #2A2C34;
   border-bottom: 2px solid #FFA500;
 }
 
-/** Customize the style of the brand name */
+/** The brand is where you display a site title or image */
 .navbar-inverse .navbar-brand {
-  color: #FFA500;
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: normal;
-  vertical-align: middle;
+  padding: 5px 5px 5px 10px;
 }
 
-/** Customize the style of the page links */
+/** Make the site logo change upon hover from orange to light gray */
+.navbar-logo img:last-child{display:none}
+.navbar-logo:hover img:first-child{display:none}
+.navbar-logo:hover img:last-child{display:inline-block}
+
+/** Make the site page links orange */
 .navbar-inverse .nav > li > a {
   color: #FFA500;
   font-size: 11pt;
   font-family: Verdana, Geneva, sans-serif;
   font-weight: normal;
-  line-height: 180%;
 }
 
-.navbar-inverse .nav > li > a:hover, 
-.navbar-inverse .brand:hover {
+/** Make the page links light gray upon hover */
+.navbar-inverse .nav > li > a:hover {
   color: #E2E2E2;
 }
 
-/** Customize the three-bar icon displayed in mobile */
+/** Customize the three-bar icon displayed in mobile. Make the border orange. */
 .navbar-inverse .navbar-toggle {
-  background-color: #2A2C34;
+  background: #2A2C34;
   border: 2px solid #FFA500;
 }
 
+/** Color the three-bars icon orange */
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #FFA500;
+  background: #FFA500;
+}
+
+/** Make the toggle icon border turn light gray upon hover */
+.navbar-inverse .navbar-toggle:hover {
+  background: #2A2C34;
+  border: 2px solid #E2E2E2;
+}
+
+/** Make the three-bars icon turn light gray upon hover */
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+  background: #E2E2E2;
 }
 
 /** Customize the header drop-down menu in mobile mode */
@@ -90,7 +102,24 @@ Navigation Bar at the top of the page.
     box-shadow: none;
     border-top: 2px solid #FFA500;
   }
+  .navbar-search .pull-right {
+    display: none;
+  }
+  .navbar-search .pull-left {
+    padding: 0px 10px 10px 0px;
+  }
 }
+
+/** Customize the header drop-down menu in desktop mode */
+@media screen and (min-width: 769px) {
+  .navbar-search .pull-right {
+    padding: 10px 5px 10px 0px;
+  }
+  .navbar-search .pull-left {
+    display: none;
+  }
+}
+
 
 /*-------------------------------------------------------------
 >>> 1.2 Body 

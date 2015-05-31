@@ -106,6 +106,7 @@ Dark navigation Bar at the top of the page.
     display: none;
   }
   .navbar-search .pull-left {
+    max-width: 250px;
     padding: 0px 10px 10px 0px;
   }
 }
@@ -113,6 +114,7 @@ Dark navigation Bar at the top of the page.
 /** Customize the header drop-down menu in desktop mode */
 @media screen and (min-width: 769px) {
   .navbar-search .pull-right {
+    max-width: 250px;
     padding: 10px 5px 10px 0px;
   }
   .navbar-search .pull-left {

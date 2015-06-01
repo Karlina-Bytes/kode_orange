@@ -340,9 +340,9 @@ p, ul, ol {
 }
 
 /** Text resembling computer program code snippets */
-code {
-  color: #2A2C34;
-  background: none;
+code, pre {
+  background: #2A2C34;
+  color: #FFA500;
   font-family: Consolas, Courier New, monospace;
   font-size: 11pt;
 }

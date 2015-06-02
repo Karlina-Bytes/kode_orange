@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kode_orange
 Tags: orange, gray, dark, white
 
-The style.css file was updated on 30 May 2015.
+The style.css file was updated on 1 June 2015.
 It utilizes Bootstrap version 3.3.4.
 
 Feel free to use this theme to learn how to make your own WP theme.
@@ -144,7 +144,7 @@ body {
 /** This is where the primary content is displayed */
 .content-area {
   background: #E2E2E2;
-  padding: 3.5em 1em 1em 1em;
+  padding: 3.5em 2em 2em 2em;
   max-width: 1024px;
 }
 
@@ -302,6 +302,8 @@ p, ul, ol {
   font-weight: normal;
   color: #2A2C34;
   font-size: 12pt;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 .categoryLink {font-size: 100%}

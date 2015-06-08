@@ -1,7 +1,7 @@
 <?php
 /**
  * single.php 
- * Updated by Karlina Beringer on 10 May 2015.
+ * Updated by Karlina Beringer on 8 June 2015.
  *
  * The template for displaying individual blog posts.
  *
@@ -19,7 +19,7 @@ get_header(); ?>
         <h2><?php the_title(); ?></h2>
         
         <!-- Display the date in which the blog post was published -->
-        <h4><?php the_time('F j, Y'); ?></h4>
+        <h4><?php the_date(); ?></h4>
         <br>
         
         <!-- Display the actual blog content here -->
@@ -32,7 +32,7 @@ get_header(); ?>
         
         <!-- Display the comments section -->
         <?php // If comments are open or we have at least one comment, load up the comment template
-	if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
+  if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
         
         
       <!-- If the blog post cannot be found, display an appropriate message -->

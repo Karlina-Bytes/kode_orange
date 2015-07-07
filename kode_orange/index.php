@@ -1,7 +1,7 @@
 <?php
 /**
  * index.php 
- * Updated by Karlina Beringer on 8 May 2015.
+ * Updated by Karlina Beringer on 1 June 2015.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -19,7 +19,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
     
       <!-- Title and Site Banner -->
-      <h2>Science <span class="grayRoundBullet">&bull;</span> Tech <span class="grayRoundBullet">&bull;</span> Philosophy</h2>
+      <h2>Adventures in Technology</h2>
       <img src="http://www.karlina-bytes.com/wp-content/uploads/2015/04/home_banner.jpg" class="img-resources" width="100%">
            
       <!-- Display blog posts in a table -->
@@ -59,3 +59,17 @@ get_header(); ?>
   </div>
 </div><!-- #row -->
 <?php get_footer(); ?>
+
+<!--================================-->
+<!-- Google Analytics Tracking Info -->
+<!--================================-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63739902-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

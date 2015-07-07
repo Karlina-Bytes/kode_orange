@@ -1,7 +1,7 @@
 <?php
 /**
  * header.php 
- * Updated by Karlina Beringer on 30 May 2015.
+ * Updated by Karlina Beringer on 3 June 2015.
  *
  * This file defines the head code and HTML above the main site contente.
  * For example, this file includes the favicon and navigation bar.
@@ -16,6 +16,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<!--================================================================-->
+<!-- A tag YouTube required me to add to prove that I own this site -->
+<!--================================================================-->
+<meta name="google-site-verification" content="rCOMt6pSBoCyUFrvFDccWMB8osntwF0FhN-9EXYLcFA" />
+<meta name="google-site-verification" content="G_u7SvgOaOT6c4wGjEkHuMquWy0K43Tt0bwXAtKJBPE" />
 
 <!--====================================-->
 <!-- Set up the page title and favicon. -->

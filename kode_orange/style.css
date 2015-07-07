@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kode_orange
 Tags: orange, gray, dark, white
 
-The style.css file was updated on 1 June 2015.
+The style.css file was updated on 4 June 2015.
 It utilizes Bootstrap version 3.3.4.
 
 Feel free to use this theme to learn how to make your own WP theme.
@@ -349,6 +349,21 @@ code, pre {
   font-size: 11pt;
 }
 
+/** Put an orange vertical bar to the left of block quotes */
+blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
+  border-left: 5px solid #FFA500;
+}
+/** Customize the style of the opening quote */
+blockquote:before {
+  color: #606375;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
 /*--------------------------------------------------------------
 >>> 2.2 Links
 Styles for the hyperlinks.
@@ -567,3 +582,4 @@ For responsive images, use the Bootstrap class "img-responsive"
     width: 100%;
     height: 100%;
 }
+

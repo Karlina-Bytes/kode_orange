@@ -32,7 +32,7 @@ get_header(); ?>
         
         <!-- Display the comments section -->
         <?php // If comments are open or we have at least one comment, load up the comment template
-  if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
+	if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
         
         
       <!-- If the blog post cannot be found, display an appropriate message -->

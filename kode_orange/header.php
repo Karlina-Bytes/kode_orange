@@ -1,7 +1,7 @@
 <?php
 /**
  * header.php 
- * Updated by Karlina Beringer on 3 June 2015.
+ * Updated by Karlina Beringer on 7 July 2015.
  *
  * This file defines the head code and HTML above the main site contente.
  * For example, this file includes the favicon and navigation bar.
@@ -56,8 +56,8 @@
       <!--=================================================================-->
       <a href="<?php echo site_url(); ?>">
         <span class="navbar-brand navbar-logo">
-          <img src="http://www.karlina-bytes.com/wp-content/uploads/2015/04/kb_logo.png" width="200">
-          <img src="http://www.karlina-bytes.com/wp-content/uploads/2015/04/kb_logo_hover.png" width="200">
+          <img src="http://www.karlina-bytes.com/wp-content/uploads/2015/07/kb_logo.png" width="200">
+          <img src="http://www.karlina-bytes.com/wp-content/uploads/2015/07/kb_logo_hover.png" width="200">
         </span>
       </a>
     </div><!--/.navbar-header-->

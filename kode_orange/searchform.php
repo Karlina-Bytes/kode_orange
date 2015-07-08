@@ -1,7 +1,7 @@
 <?php
 /**
  * searchform.php
- * Updated on 9 May 2015 by Karlina Beringer.
+ * Updated on 7 July 2015 by Karlina Beringer.
  *
  * The search form.
  *
@@ -15,7 +15,7 @@
       <div class="input-group">
       
         <!-- The search term box -->
-        <input class="form-control" type="text" placeholder="<?php echo esc_attr( 'Search...', 'presentation' ); ?>" name="s" id="search-input" value="<?php echo esc_attr( get_search_query() ); ?>" />
+        <input class="form-control" id="searchBox" type="text" placeholder="<?php echo esc_attr( 'Search...', 'presentation' ); ?>" name="s" id="search-input" value="<?php echo esc_attr( get_search_query() ); ?>" />
         
         <!-- The submit button -->
         <span class="input-group-addon">

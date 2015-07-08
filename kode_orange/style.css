@@ -3,13 +3,13 @@ Theme Name: kode_orange
 Author: Karlina Ray Beringer
 Author URI: http://www.karlina-bytes.com
 Description: This is a theme developed especially for the Karlina Bytes website.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kode_orange
-Tags: orange, gray, dark, white
+Tags: orange, gray, dark, white, responsive
 
-The style.css file was updated on 4 June 2015.
+The style.css file was updated on 7 July 2015.
 It utilizes Bootstrap version 3.3.4.
 
 Feel free to use this theme to learn how to make your own WP theme.
@@ -56,7 +56,7 @@ Dark navigation Bar at the top of the page.
   padding: 5px 5px 5px 10px;
 }
 
-/** Make the site logo change upon hover from orange to light gray */
+/** Make the site logo change upon hover from orange to light blue */
 .navbar-logo img:last-child{display:none}
 .navbar-logo:hover img:first-child{display:none}
 .navbar-logo:hover img:last-child{display:inline-block}
@@ -69,9 +69,9 @@ Dark navigation Bar at the top of the page.
   font-weight: normal;
 }
 
-/** Make the page links light gray upon hover */
+/** Make the page links light blue upon hover */
 .navbar-inverse .nav > li > a:hover {
-  color: #E2E2E2;
+  color: #51CBEE;
 }
 
 /** Customize the three-bar icon displayed in mobile. Make the border orange. */
@@ -85,15 +85,15 @@ Dark navigation Bar at the top of the page.
   background: #FFA500;
 }
 
-/** Make the toggle icon border turn light gray upon hover */
+/** Make the toggle icon border turn light blue upon hover */
 .navbar-inverse .navbar-toggle:hover {
   background: #2A2C34;
-  border: 2px solid #E2E2E2;
+  border: 2px solid #51CBEE;
 }
 
-/** Make the three-bars icon turn light gray upon hover */
+/** Make the three-bars icon turn light blue upon hover */
 .navbar-inverse .navbar-toggle:hover .icon-bar {
-  background: #E2E2E2;
+  background: #51CBEE;
 }
 
 /** Customize the header drop-down menu in mobile mode */
@@ -430,7 +430,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #FFA500;
+  color: #51CBEE;
   font-size: 11pt;
   font-family: Verdana, Geneva, sans-serif;
   font-weight: normal;
@@ -499,6 +499,7 @@ select {
 >>> 3.2.3 Search Box
 Allows readers to look up content via search terms.
 --------------------------------------------------------------*/
+/*
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus,
@@ -511,24 +512,75 @@ Allows readers to look up content via search terms.
   background-color: #FFA500;
   border: none;
 }
+*/
 
-input[type="submit"], button[type="submit"], .input-group-addon {
+button[type="submit"]
+{
   color: #2A2C34;
   font-size: 11pt;
   font-family: Verdana, Geneva, sans-serif;
   font-weight: normal;
-  background-color: #FFA500;
+  background: none;
   border: none;
+}
+
+.input-group-addon {
+  color: #2A2C34;
+  font-size: 11pt;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  background: #FFA500;
+  border: none;
+}
+  
+.input-group-addon:hover {
+  background: #51CBEE;
 }
 
 .glyphicon-search {
   color: #2A2C34;
+  background: none;
 }
 
 .navSearch {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   max-width: 350px;
+}
+
+#searchBox::-webkit-input-placeholder
+{
+  color: #E2E2E2;
+}
+
+#searchBox:-moz-placeholder
+{
+  color: #E2E2E2;
+}
+
+#searchBox::-moz-placeholder
+{
+  color: #E2E2E2;
+}
+
+#searchBox:-moz-placeholder
+{
+  color: #E2E2E2;
+}
+
+#searchBox::-moz-placeholder
+{
+  color: #E2E2E2;
+}
+
+#searchBox:-ms-input-placeholder
+{
+  color: #E2E2E2;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
 
 /*--------------------------------------------------------------
@@ -582,4 +634,3 @@ For responsive images, use the Bootstrap class "img-responsive"
     width: 100%;
     height: 100%;
 }
-
